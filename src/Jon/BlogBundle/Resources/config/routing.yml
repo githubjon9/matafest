@@ -1,0 +1,3 @@
+jon_blog_homepage:
+    path:     /
+    defaults: { _controller: JonBlogBundle:Default:index }

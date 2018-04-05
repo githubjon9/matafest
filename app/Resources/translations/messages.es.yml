@@ -1,0 +1,12 @@
+# this is a custom translation catalog used in the 'config_custom_translation_domain.yml' test
+action.delete: '__Borrar__'
+action.edit: '__Editar__'
+action.list: '__Volver a la lista__'
+action.new: '__Nuevo__'
+action.save: '__Guardar__'
+action.search: '__Buscar__'
+Category: '__Categoría__'
+ID: '__ID__'
+Name: '__Nombre__'
+Parent: '__Padre__'
+Products: '__Productos__'

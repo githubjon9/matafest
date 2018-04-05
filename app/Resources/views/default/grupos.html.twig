@@ -1,0 +1,103 @@
+{% block stylesheets %}
+    <link href="{{ asset('assets/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet"/>
+    <!-- Custom styles for this template -->
+    <link href="{{ asset('assets/css/business-casual.min.css') }}" rel="stylesheet"/>
+    <link href="{{ asset('assets/css/matafest.css') }}" rel="stylesheet"/>
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset('assets/jquery/jquery.min.js') }}"></script>
+    <script src="{{ asset('assets/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+{% endblock %}
+{% block body %}
+    {% include '@templates/header.html.twig' %}
+    <section class="page-section">
+        <div class="container">
+            <div class="product-item">
+                <div class="product-item-title d-flex">
+                    <div class="bg-faded p-5 d-flex ml-auto rounded">
+                        <h2 class="section-heading mb-0">
+                            <span class="section-heading-upper">BLEED</span>
+                            <span class="section-heading-lower"></span>
+                        </h2>
+                    </div>
+                </div>
+                <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="{{ asset('assets/img/bleed_grupo.jpg') }}" alt="">
+                <div class="product-item-description d-flex mr-auto">
+                    <div class="bg-faded p-5 rounded">
+                        <p class="mb-0">Bledd, desde las entrañas de la margen izquierda Bizkaina(Ezkerraldea), bajo el sonido de las fábricas y el despertar de la inería del hierro.</p>
+                        <p class="mb-0">Nace en 2015 tras la inquietud musical de Jon G. y Txema Delrío. Tras varios cambios en la formación, consolidan la banda con la incorporación de Unai a la guitarra, Jon Ander al frente de la banda como vocal y Alai a la batería.</p>
+                        <p class="mb-0">Bleed ha llegado para quedarse, pisar duro y expresar su mensaje para que llegue a todos vosotros.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-section">
+        <div class="container">
+            <div class="product-item">
+                <div class="product-item-title d-flex">
+                    <div class="bg-faded p-5 d-flex mr-auto rounded">
+                        <h2 class="section-heading mb-0">
+                            <span class="section-heading-upper">HUTS</span>
+                            <span class="section-heading-lower"></span>
+                        </h2>
+                    </div>
+                </div>
+                <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="{{ asset('assets/img/huts_grupo.jpg') }}" alt="">
+                <div class="product-item-description d-flex ml-auto">
+                    <div class="bg-faded p-5 rounded">
+                        <p class="mb-0">Huts es un grupo de rock alternativo formado en el año 2015 en Trapagaran(Bizkaia). En agosto de ese mismo año editan su primera maqueta(Autoeditada) bajo el título de "Barne" ("Dentro"). Tras ofrecer varios conciertos, en junio de 2016 resultan ganadores en el concurso de bandas "Barrika On Air". De ahí en adelante, el grupo ha ido creciendo logrando un sonido cada vez más solido.</p>
+                        <p class="mb-0">A principios de 2017 graban en "Gaua Records" su primer disco "Mamuak"("Fantasmas") producido por Aitor Abio (π.L.T, Matxura, Revolta Permanent): Tras la grabación del disco, en abril de ese mismo año, resultan finalistas del prestigioso concurso de Euskal Herria "Gaztea Maketa Lehiaketa". En estos momentos la banda se encuentra inmersa en la gira de presentación de su ópera prima y con un montón de proyectos ilusionantes por delante.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-section">
+        <div class="container">
+            <div class="product-item">
+                <div class="product-item-title d-flex">
+                    <div class="bg-faded p-5 d-flex ml-auto rounded">
+                        <h2 class="section-heading mb-0">
+                            <span class="section-heading-upper">DOBLE FILO</span>
+                            <span class="section-heading-lower"></span>
+                        </h2>
+                    </div>
+                </div>
+                <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="{{ asset('assets/img/doblefilo_grupo.jpg') }}" alt="">
+                <div class="product-item-description d-flex mr-auto">
+                    <div class="bg-faded p-5 rounded">
+                        <p class="mb-0">Travelling the world for the very best quality coffee is something take pride in. When you visit us, you'll always find new blends from around the world, mainly from regions in Central and South America. We sell our blends in smaller to large bulk quantities. Please visit us in person for more details.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <section class="page-section">
+        <div class="container">
+            <div class="product-item">
+                <div class="product-item-title d-flex">
+                    <div class="bg-faded p-5 d-flex ml-auto rounded">
+                        <h2 class="section-heading mb-0">
+                            <span class="section-heading-upper">KONTRATO BASURA</span>
+                            <span class="section-heading-lower"></span>
+                        </h2>
+                    </div>
+                </div>
+                <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="{{ asset('assets/img/kontrato_basura.jpg') }}" alt="">
+                <div class="product-item-description d-flex mr-auto">
+                    <div class="bg-faded p-5 rounded">
+                        <p class="mb-0">Travelling the world for the very best quality coffee is something take pride in. When you visit us, you'll always find new blends from around the world, mainly from regions in Central and South America. We sell our blends in smaller to large bulk quantities. Please visit us in person for more details.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% include '@templates/footer.html.twig' %}
+{% endblock %}

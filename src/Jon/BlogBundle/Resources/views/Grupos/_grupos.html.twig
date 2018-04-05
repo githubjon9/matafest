@@ -1,0 +1,56 @@
+{% block stylesheets %}
+    <link href="{{ asset('assets/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet"/>
+    <!-- Custom styles for this template -->
+    <link href="{{ asset('assets/css/business-casual.min.css') }}" rel="stylesheet"/>
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+{% endblock %}
+{% block body %}
+    {% include '@templates/header.html.twig' %}
+    {% if grupos|length > 0 %}
+        {% for grupo in grupos %}
+            <section class="page-section">
+                <div class="container">
+                    <div class="product-item">
+                        <div class="product-item-title d-flex">
+                            <div class="bg-faded p-5 d-flex {% if(loop.index % 2 == 0) %}ml-auto{% else %}mr-auto{% endif %} rounded">
+                                <h2 class="section-heading mb-0">
+                                    <span class="section-heading-upper">{{ grupo.nombre }}</span>
+                                    <span class="section-heading-lower"></span>
+                                </h2>
+                            </div>
+                        </div>
+                        <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="{{ asset('assets/img/grupos/') }}{{ grupo.image }}" alt="">
+                        <div class="product-item-description d-flex {% if(loop.index % 2 == 0) %}mr-auto{% else %}ml-auto{% endif %}">
+                            <div class="bg-faded p-5 rounded">
+                                <p class="mb-0">{{ grupo.descripcion|raw }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        {% endfor %}
+    {% else %}
+        <section class="page-section cta">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-9 mx-auto">
+                        <div class="cta-inner text-center rounded">
+                            <h2 class="section-heading mb-5">
+                                <span class="section-heading-upper">Estate al loro</span>
+                                <span class="section-heading-lower">En breve las confirmaciones</span>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    {% endif %}
+    {% include '@templates/footer.html.twig' %}
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset('assets/jquery/jquery.min.js') }}"></script>
+    <script src="{{ asset('assets/bootstrap/js/bootstrap.min.js') }}"></script>
+{% endblock %}

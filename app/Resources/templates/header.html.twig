@@ -1,0 +1,35 @@
+<h1 class="site-heading text-center text-white">
+    <span class="site-heading-upper text-primary mb-3">
+        <img src="{{ asset('assets/img/logo.png') }}">
+    </span>
+    {#<span class="site-heading-lower">El festival punk-rock de la zona minera</span>#}
+</h1>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item {% if menu == 'home' %}active{% endif %} px-lg-4">
+                    <a class="nav-link text-uppercase text-expanded" href="{{ path('homepage') }}">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item {% if menu == 'about' %}active{% endif %} px-lg-4">
+                    <a class="nav-link text-uppercase text-expanded" href="{{ path('about') }}">Sobre MataFest</a>
+                </li>
+                <li class="nav-item {% if menu == 'blog' %}active{% endif %} px-lg-4">
+                    <a class="nav-link text-uppercase text-expanded" href="{{ path('jon_blog_homepage') }}">Blog</a>
+                </li>
+                <li class="nav-item {% if menu == 'grupos' %}active{% endif %} px-lg-4">
+                    <a class="nav-link text-uppercase text-expanded" href="{{ path('grupos') }}">Grupos</a>
+                </li>
+                <li class="nav-item {% if menu == 'tienda' %}active{% endif %} px-lg-4">
+                    <a class="nav-link text-uppercase text-expanded" href="{{ path('tienda') }}">Tienda</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        {#<link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />#}
+        {% block stylesheets %}{% endblock %}
+        <script defer src="{{ asset('assets/fontawesome/svg-with-js/js/fontawesome-all.js') }}"></script>
+        <title>MataFest{% block title %}{% endblock %}</title>
+        <link rel="icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>
